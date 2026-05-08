@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ava — Creative Director</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Unbounded:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Noise Overlay -->
+  <div class="noise"></div>
+
+  <!-- Floating Shapes Background -->
+  <div class="bg-shapes" aria-hidden="true">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="#" class="nav-logo">AVA.</a>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#works" class="nav-link">Works</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-text-block">
+        <p class="hero-label reveal">Creative Director & Designer</p>
+        <h1 class="hero-title">
+          <span class="title-line reveal">Lawrence</span>
+          <span class="title-line title-line-accent reveal">Li</span>
+        </h1>
+        <p class="hero-subtitle reveal">Crafting digital experiences that resonate and inspire.</p>
+      </div>
+      <div class="hero-image-block">
+        <div class="hero-image-frame reveal">
+          <img src="assets/touxiang.PNG" alt="Lawrence Li" class="hero-photo">
+          <div class="hero-image-accent"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator reveal">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about-grid">
+      <div class="about-image-col">
+        <div class="about-image-wrap reveal">
+          <img src="assets/about.PNG" alt="Lawrence Li" class="about-image">
+          <div class="about-image-accent"></div>
+        </div>
+      </div>
+      <div class="about-text-col">
+        <p class="section-label reveal">About</p>
+        <h2 class="about-title reveal">Designing the<br><span class="accent">future</span> one<br>pixel at a time.</h2>
+        <div class="about-bio reveal">
+          <p>Based in Shanghai, I specialize in brand identity, digital products, and immersive web experiences. With over eight years in the industry, I've collaborated with brands like Nike, Spotify, and Porsche.</p>
+          <p>My approach combines strategic thinking with meticulous craft — every detail matters, every choice has purpose.</p>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat">
+            <span class="stat-number">8+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">120+</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">40+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section class="works" id="works">
+    <p class="section-label reveal">Selected Works</p>
+    <div class="works-header reveal">
+      <h2 class="works-title">Featured<br><span class="accent">Projects</span></h2>
+    </div>
+    <div class="works-grid">
+
+      <article class="work-card work-card-1 reveal">
+        <div class="work-image-wrap">
+          <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80" alt="Nebula Brand Identity" class="work-image">
+        </div>
+        <div class="work-info">
+          <span class="work-cat">Brand Identity</span>
+          <h3 class="work-title">Nebula Studios</h3>
+          <p class="work-desc">Complete visual identity for a forward-thinking entertainment company.</p>
+        </div>
+        <div class="work-number">01</div>
+      </article>
+
+      <article class="work-card work-card-2 reveal">
+        <div class="work-image-wrap">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Flux App Design" class="work-image">
+        </div>
+        <div class="work-info">
+          <span class="work-cat">Digital Product</span>
+          <h3 class="work-title">Flux Finance</h3>
+          <p class="work-desc">UX/UI design for a next-gen fintech mobile application.</p>
+        </div>
+        <div class="work-number">02</div>
+      </article>
+
+      <article class="work-card work-card-3 reveal">
+        <div class="work-image-wrap">
+          <img src="https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?w=800&q=80" alt="Apex Campaign" class="work-image">
+        </div>
+        <div class="work-info">
+          <span class="work-cat">Art Direction</span>
+          <h3 class="work-title">Apex Motors</h3>
+          <p class="work-desc">Global campaign for an electric hypercar launch.</p>
+        </div>
+        <div class="work-number">03</div>
+      </article>
+
+      <article class="work-card work-card-4 reveal">
+        <div class="work-image-wrap">
+          <img src="https://images.unsplash.com/photo-1634017839464-5c339bbe3c35?w=800&q=80" alt="Ethereal Editorial" class="work-image">
+        </div>
+        <div class="work-info">
+          <span class="work-cat">Editorial</span>
+          <h3 class="work-title">Ethereal Magazine</h3>
+          <p class="work-desc">Art direction and layout design for quarterly print publication.</p>
+        </div>
+        <div class="work-number">04</div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="contact-content">
+      <p class="section-label reveal">Get in Touch</p>
+      <h2 class="contact-title reveal">Let's create<br>something <span class="accent">amazing</span></h2>
+      <p class="contact-subtitle reveal">Open for freelance projects, collaborations, or just a friendly conversation.</p>
+      <a href="mailto:hello@avachen.design" class="contact-email reveal">hello@avachen.design</a>
+      <div class="contact-socials reveal">
+        <a href="#" class="social-link">Instagram</a>
+        <a href="#" class="social-link">Behance</a>
+        <a href="#" class="social-link">Dribbble</a>
+        <a href="#" class="social-link">LinkedIn</a>
+      </div>
+    </div>
+    <div class="contact-decoration" aria-hidden="true">
+      <div class="deco-circle"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-copy">&copy; 2026 Ava Chen. All rights reserved.</p>
+    <p class="footer-credit">Designed with precision & passion.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
