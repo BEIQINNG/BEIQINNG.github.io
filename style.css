@@ -594,6 +594,120 @@ img {
 }
 
 /* ============================================
+   EDUCATION & EXPERIENCE SECTION
+   ============================================ */
+.education,
+.experience {
+  padding: 10rem 4rem;
+  position: relative;
+}
+
+.edu-exp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.edu-item {
+  display: flex;
+  gap: 2rem;
+  padding: 2.5rem;
+  background: var(--bg-secondary);
+  border-radius: 3px;
+  border-left: 3px solid var(--accent);
+  transition: var(--transition-smooth);
+}
+
+.edu-item:hover {
+  transform: translateX(8px);
+  background: rgba(255, 77, 77, 0.05);
+}
+
+.edu-year {
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+  padding-top: 0.25rem;
+}
+
+.edu-school {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.edu-degree {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.edu-desc {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* ============================================
+   HOBBIES SECTION
+   ============================================ */
+.hobbies {
+  padding: 10rem 4rem;
+  position: relative;
+}
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hobby-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2.5rem 1.5rem;
+  background: var(--bg-secondary);
+  border-radius: 3px;
+  transition: var(--transition-smooth);
+  text-align: center;
+}
+
+.hobby-item:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 77, 77, 0.08);
+}
+
+.hobby-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.hobby-name {
+  font-size: 0.8125rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.hobby-item:hover .hobby-name {
+  color: var(--accent);
+}
+
+/* ============================================
    CONTACT SECTION
    ============================================ */
 .contact {
@@ -821,6 +935,25 @@ img {
     padding: 6rem 2rem;
   }
 
+  .education,
+  .experience {
+    padding: 6rem 2rem;
+  }
+
+  .edu-exp-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hobbies {
+    padding: 6rem 2rem;
+  }
+
+  .hobbies-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
   .footer {
     flex-direction: column;
     gap: 1rem;
@@ -861,6 +994,19 @@ img {
   .contact-socials {
     flex-wrap: wrap;
     gap: 1.5rem;
+  }
+
+  .edu-item {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hobbies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hobby-item {
+    padding: 2rem 1rem;
   }
 }
 

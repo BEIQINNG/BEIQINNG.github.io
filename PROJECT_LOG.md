@@ -16,6 +16,9 @@
 - Hero 区：Lawrence Li 全屏展示，左侧文字 + 右侧竖图照片，Li 描边字体入场动画
 - About 区：个人介绍 + 数据统计（8+年经验、120+项目、40+客户）
 - Works 区：4个作品卡片，2列网格布局，hover 3D tilt 效果
+- **Education 区**：教育经历，2列卡片布局
+- **Experience 区**：工作经历，2列卡片布局
+- **Hobbies 区**：兴趣爱好，6列网格图标布局
 - Contact 区：邮箱 + 社交链接
 
 **视觉风格**
@@ -25,11 +28,20 @@
 - 滚动驱动入场动画（Intersection Observer）
 
 **导航栏**
-- 右上角：About / Works / Contact（已按要求调换顺序）
+- 右上角：About / Works / Education / Experience / Hobbies / Contact
 
 **其他**
 - 响应式适配（桌面、平板、手机）
 - 使用本地图片：`assets/touxiang.PNG`（Hero）、`assets/about.PNG`（About）
+
+---
+
+### 2026-05-08 — v1.1 新增板块
+
+**新增内容**
+- Education 区：Stanford University + Royal College of Art
+- Experience 区：Google Senior Product Designer + Independent Creative Director
+- Hobbies 区：Photography / Music / Hiking / Digital Art / Travel / Coffee
 
 ---
 
@@ -38,6 +50,8 @@
 | 日期 | Commit | 说明 |
 |------|--------|------|
 | 2026-05-08 | `136cefb` | Initial commit — 完整初始版本 |
+| 2026-05-08 | `9ddf0d9` | Add project log tracking file |
+| 2026-05-08 | `xxxxxx` | Add Education, Experience, Hobbies sections |
 
 ---
 
@@ -48,6 +62,7 @@
 - [ ] 添加简历下载功能
 - [ ] 添加 loading 动画
 - [ ] 考虑添加 Dark/Light 主题切换
+- [ ] 替换占位内容为真实信息
 
 ---
 
