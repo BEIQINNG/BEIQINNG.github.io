@@ -29,8 +29,8 @@
       <a href="#about" class="nav-link">About</a>
       <a href="#works" class="nav-link">Projects</a>
       <a href="#education" class="nav-link">Education</a>
-      <a href="#experience" class="nav-link">Experience</a>
-      <a href="#hobbies" class="nav-link">Hobbies</a>
+      <a href="#experience" class="nav-link" style="display: none;">Experience</a>
+      <a href="#hobbies" class="nav-link" style="display: none;">Hobbies</a>
       <a href="#contact" class="nav-link">Contact</a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">
@@ -51,7 +51,7 @@
       </div>
       <div class="hero-image-block">
         <div class="hero-image-frame reveal">
-          <img src="assets/touxiang.PNG" alt="Lawrence Li" class="hero-photo">
+          <img src="assets/touxiang.png" alt="Lawrence Li" class="hero-photo">
           <div class="hero-image-accent"></div>
         </div>
       </div>
@@ -67,7 +67,7 @@
     <div class="about-grid">
       <div class="about-image-col">
         <div class="about-image-wrap reveal">
-          <img src="assets/about.PNG" alt="Lawrence Li" class="about-image">
+          <img src="assets/about.png" alt="Lawrence Li" class="about-image">
           <div class="about-image-accent"></div>
         </div>
       </div>
@@ -75,7 +75,7 @@
         <p class="section-label reveal">About</p>
         <h2 class="about-title reveal">Designing the<br><span class="accent">future</span> one<br>pixel at a time.</h2>
         <div class="about-bio reveal">
-          <p>Based in Shanghai, I specialize in brand identity, digital products, and immersive web experiences. With over eight years in the industry, I've collaborated with brands like Nike, Spotify, and Porsche.</p>
+          <p>Based in SHENZHEN, I specialize in brand identity, digital products, and immersive web experiences. With over eight years in the industry, I've collaborated with brands like Nike, Spotify, and Porsche.</p>
           <p>My approach combines strategic thinking with meticulous craft — every detail matters, every choice has purpose.</p>
         </div>
         <div class="about-stats reveal">
@@ -106,7 +106,7 @@
 
       <article class="work-card work-card-1 reveal">
         <div class="work-image-wrap">
-          <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80" alt="Nebula Brand Identity" class="work-image">
+          <img src="assets/project-1.png" alt="Project 1" class="work-image">
         </div>
         <div class="work-info">
           <span class="work-cat">Brand Identity</span>
@@ -118,7 +118,7 @@
 
       <article class="work-card work-card-2 reveal">
         <div class="work-image-wrap">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Flux App Design" class="work-image">
+          <img src="assets/project-2.png" alt="Project 2" class="work-image">
         </div>
         <div class="work-info">
           <span class="work-cat">Digital Product</span>
@@ -130,7 +130,7 @@
 
       <article class="work-card work-card-3 reveal">
         <div class="work-image-wrap">
-          <img src="https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?w=800&q=80" alt="Apex Campaign" class="work-image">
+          <img src="assets/project-3.png" alt="Project 3" class="work-image">
         </div>
         <div class="work-info">
           <span class="work-cat">Art Direction</span>
@@ -142,7 +142,7 @@
 
       <article class="work-card work-card-4 reveal">
         <div class="work-image-wrap">
-          <img src="https://images.unsplash.com/photo-1634017839464-5c339bbe3c35?w=800&q=80" alt="Ethereal Editorial" class="work-image">
+          <img src="assets/project-4.png" alt="Project 4" class="work-image">
         </div>
         <div class="work-info">
           <span class="work-cat">Editorial</span>
@@ -157,133 +157,94 @@
 
   <!-- Education -->
   <section class="education" id="education">
-    <div class="edu-header">
-      <p class="section-label reveal">Education</p>
-      <h2 class="edu-main-title reveal">Academic<br><span class="accent">Journey</span></h2>
+    <p class="section-label reveal">Education</p>
+    <div class="edu-header reveal">
+      <h2 class="edu-main-title">Academic<br><span class="accent">Journey</span></h2>
     </div>
-    <div class="edu-timeline">
+    <div class="edu-grid">
 
-      <div class="edu-card edu-card-1 reveal">
-        <div class="edu-card-inner">
-          <div class="edu-card-bg">
-            <span class="edu-bg-num">01</span>
-          </div>
-          <div class="edu-card-content">
-            <img src="assets/Shenzhen Technology University.png" alt="SZTU" class="edu-logo-img sztu-logo">
-            <div class="edu-year">
-              <span class="edu-year-start">20XX</span>
-              <span class="edu-dash">—</span>
-              <span class="edu-year-end">20XX</span>
-            </div>
-            <h3 class="edu-school">Shenzhen University<br>of Technology</h3>
-            <p class="edu-degree">B.Eng. Computer Science & Technology</p>
-            <p class="edu-note">深圳技术大学 · 本科</p>
-          </div>
+      <article class="edu-card reveal">
+        <div class="edu-image-wrap">
+          <img src="assets/Shenzhen Technology University.png" alt="SZTU" class="edu-image">
         </div>
-      </div>
+        <div class="edu-info">
+          <h3 class="edu-school">SHENZHEN TECHNOLOGY UNIVERSITY</h3>
+          <p class="edu-desc">B.Eng. Computer Science</p>
+        </div>
+        <div class="edu-note">深圳技术大学 · 本科</div>
+      </article>
 
-      <div class="edu-card edu-card-2 reveal">
-        <div class="edu-card-inner">
-          <div class="edu-card-bg">
-            <span class="edu-bg-num">02</span>
-          </div>
-          <div class="edu-card-content">
-            <img src="assets/Zhejiang University.png" alt="ZJU" class="edu-logo-img zju-logo">
-            <div class="edu-year">
-              <span class="edu-year-start">20XX</span>
-              <span class="edu-dash">—</span>
-              <span class="edu-year-end">20XX</span>
-            </div>
-            <h3 class="edu-school">Zhejiang<br>University</h3>
-            <p class="edu-degree">M.S. Computer Science — AI</p>
-            <p class="edu-note">浙江大学 · 硕士 · 人工智能方向</p>
-          </div>
+      <article class="edu-card reveal">
+        <div class="edu-image-wrap">
+          <img src="assets/Zhejiang University.png" alt="ZJU" class="edu-image">
         </div>
-      </div>
+        <div class="edu-info">
+          <h3 class="edu-school">ZHEJIANG UNIVERSITY</h3>
+          <p class="edu-desc">M.S. Computer Science</p>
+        </div>
+        <div class="edu-note">浙江大学 · 硕士</div>
+      </article>
 
-      <div class="edu-card edu-card-3 reveal">
-        <div class="edu-card-inner">
-          <div class="edu-card-bg">
-            <span class="edu-bg-num">03</span>
-          </div>
-          <div class="edu-card-content">
-            <img src="assets/University of Oxford.svg" alt="Oxford" class="edu-logo-img oxford-logo">
-            <div class="edu-year">
-              <span class="edu-year-start">20XX</span>
-              <span class="edu-dash">—</span>
-              <span class="edu-year-end">Present</span>
-            </div>
-            <h3 class="edu-school">University<br>of Oxford</h3>
-            <p class="edu-degree">Ph.D. — Artificial Intelligence</p>
-            <p class="edu-note">牛津大学 · 博士 · 研究方向待定</p>
-          </div>
+      <article class="edu-card reveal">
+        <div class="edu-image-wrap">
+          <img src="assets/University of Oxford.svg" alt="Oxford" class="edu-image">
         </div>
-      </div>
+        <div class="edu-info">
+          <h3 class="edu-school">UNIVERSITY OF OXFORD</h3>
+          <p class="edu-desc">Ph.D.</p>
+        </div>
+        <div class="edu-note">牛津大学 · 博士</div>
+      </article>
 
     </div>
   </section>
 
   <!-- Experience -->
-  <section class="experience" id="experience">
-    <div class="edu-header">
-      <p class="section-label reveal">Experience</p>
-      <h2 class="edu-main-title reveal">Professional<br><span class="accent">Track</span></h2>
+  <section class="experience" id="experience" style="display: none;">
+    <p class="section-label reveal">Experience</p>
+    <div class="edu-header reveal">
+      <h2 class="edu-main-title">Professional<br><span class="accent">Track</span></h2>
     </div>
-    <div class="edu-timeline">
+    <div class="exp-grid">
 
-      <div class="edu-card edu-card-1 reveal">
-        <div class="edu-card-inner">
-          <div class="edu-card-bg">
-            <span class="edu-bg-num">01</span>
-          </div>
-          <div class="edu-card-content">
-            <div class="edu-logo exp-logo">
-              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="40" cy="40" r="38" stroke="currentColor" stroke-width="2"/>
-                <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" font-family="Unbounded" font-size="14" font-weight="700" fill="currentColor">GOOG</text>
-              </svg>
-            </div>
-            <div class="edu-year">
-              <span class="edu-year-start">2021</span>
-              <span class="edu-dash">—</span>
-              <span class="edu-year-end">2023</span>
-            </div>
-            <h3 class="edu-school">Google</h3>
-            <p class="edu-degree">Senior Product Designer</p>
-            <p class="edu-note">Led design for Material You · Billions of users worldwide</p>
-          </div>
+      <article class="edu-card reveal">
+        <div class="edu-image-wrap">
+          <img src="assets/Growatt.svg" alt="Growatt" class="edu-image">
         </div>
-      </div>
+        <div class="edu-info">
+          <h3 class="edu-school">GROWATT</h3>
+          <p class="edu-desc">Product Design Lead · Solar Inverter Division</p>
+        </div>
+        <div class="edu-note">逆变器厂商 · 深圳 · 2019-2021</div>
+      </article>
 
-      <div class="edu-card edu-card-2 reveal">
-        <div class="edu-card-inner">
-          <div class="edu-card-bg">
-            <span class="edu-bg-num">02</span>
-          </div>
-          <div class="edu-card-content">
-            <div class="edu-logo indie-logo">
-              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="40" cy="40" r="38" stroke="currentColor" stroke-width="2"/>
-                <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" font-family="Unbounded" font-size="14" font-weight="700" fill="currentColor">∞</text>
-              </svg>
-            </div>
-            <div class="edu-year">
-              <span class="edu-year-start">2023</span>
-              <span class="edu-dash">—</span>
-              <span class="edu-year-end">Present</span>
-            </div>
-            <h3 class="edu-school">Independent</h3>
-            <p class="edu-degree">Creative Director & Designer</p>
-            <p class="edu-note">Building digital products · Startups & global brands</p>
-          </div>
+      <article class="edu-card reveal">
+        <div class="edu-image-wrap">
+          <img src="assets/Google.svg" alt="Google" class="edu-image">
         </div>
-      </div>
+        <div class="edu-info">
+          <h3 class="edu-school">GOOGLE</h3>
+          <p class="edu-desc">Senior Product Designer · Material Design</p>
+        </div>
+        <div class="edu-note">人工智能产品设计 · 2021-2023</div>
+      </article>
+
+      <article class="edu-card reveal">
+        <div class="edu-image-wrap">
+          <img src="assets/OpenAI.svg" alt="OpenAI" class="edu-image">
+        </div>
+        <div class="edu-info">
+          <h3 class="edu-school">OPENAI</h3>
+          <p class="edu-desc">Creative Director · ChatGPT Design</p>
+        </div>
+        <div class="edu-note">AI 产品设计 · 2023-Present</div>
+      </article>
 
     </div>
   </section>
 
   <!-- Hobbies -->
-  <section class="hobbies" id="hobbies">
+  <section class="hobbies" id="hobbies" style="display: none;">
     <p class="section-label reveal">Hobbies</p>
     <div class="hobbies-grid">
       <div class="hobby-item reveal">
@@ -314,7 +275,7 @@
   </section>
 
   <!-- Contact -->
-  <section class="contact" id="contact">
+  <section class="contact" id="contact" style="display: none;">
     <div class="contact-content">
       <p class="section-label reveal">Get in Touch</p>
       <h2 class="contact-title reveal">Let's create<br>something <span class="accent">amazing</span></h2>
