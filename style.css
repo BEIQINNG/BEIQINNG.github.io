@@ -645,13 +645,45 @@ img {
   margin: 0 auto;
 }
 
+.edu-header {
+  margin-bottom: 6rem;
+  padding: 0 8vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.edu-header-line {
+  width: 200px;
+  height: 3px;
+  background: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.edu-main-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 10vw, 8rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+
+.edu-header-accent {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: var(--text-muted);
+  font-weight: 300;
+  max-width: 300px;
+  text-align: right;
+  line-height: 1.5;
+}
+
 .edu-card {
   position: relative;
   overflow: hidden;
   background: var(--bg-secondary);
   border-radius: 4px;
   min-height: 480px;
-}
   transition: all 0.5s var(--ease-out-expo);
 }
 
@@ -1472,47 +1504,60 @@ img {
     margin-bottom: 4rem;
   }
 
+  .edu-header-line {
+    width: 120px;
+  }
+
+  .edu-header-accent {
+    display: none;
+  }
+
   .edu-main-title {
     font-size: clamp(2.5rem, 6vw, 4rem);
   }
 
-  .edu-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .edu-bento {
+    grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
+  }
+
+  .edu-card {
+    min-height: 420px;
+  }
+
+  .edu-card-inner {
+    padding: 2rem;
   }
 
   .edu-image-wrap {
-    height: 220px;
+    min-height: 140px;
   }
 
-  .edu-info {
-    padding: 1.5rem;
-  }
-
-  .edu-school {
-    font-size: 1rem;
-  }
-
-  .edu-desc {
-    font-size: 0.8125rem;
-  }
-
-  .edu-note {
-    font-size: 0.75rem;
-    padding: 0.75rem 1.5rem;
-  }
-
-  .experience .edu-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .exp-timeline {
     gap: 1.5rem;
   }
 
-  .experience .edu-card:nth-child(2) {
-    margin-top: 3rem;
+  .exp-card {
+    padding: 2.5rem 2rem;
+    gap: 2rem;
   }
 
-  .experience .edu-card:nth-child(3) {
-    margin-top: 6rem;
+  .exp-card-content {
+    grid-template-columns: auto 100px 1fr auto;
+    gap: 1.5rem;
+  }
+
+  .exp-logo-wrap {
+    width: 100px;
+    height: 100px;
+  }
+
+  .exp-company {
+    font-size: clamp(1.25rem, 3vw, 2rem);
+  }
+
+  .exp-role {
+    font-size: 0.9375rem;
   }
 
   .hobbies {
@@ -1543,27 +1588,46 @@ img {
     font-size: clamp(3rem, 7vw, 4.5rem);
   }
 
-  .edu-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .edu-bento {
+    grid-template-columns: 1fr 1fr;
   }
 
   .edu-card:nth-child(3) {
     grid-column: 1 / -1;
-    max-width: 50%;
-    margin: 3rem auto 0;
+    max-width: 60%;
+    margin: 2rem auto 0;
   }
 
-  .experience .edu-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .exp-timeline {
     gap: 1.5rem;
   }
 
-  .experience .edu-card:nth-child(2) {
-    margin-top: 3rem;
+  .exp-card {
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
   }
 
-  .experience .edu-card:nth-child(3) {
-    margin-top: 6rem;
+  .exp-card-content {
+    grid-template-columns: auto 80px 1fr;
+    gap: 1.25rem;
+  }
+
+  .exp-logo-wrap {
+    width: 80px;
+    height: 80px;
+    padding: 1rem;
+  }
+
+  .exp-card-footer {
+    display: none;
+  }
+
+  .exp-company {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+  }
+
+  .exp-role {
+    font-size: 0.875rem;
   }
 
   .hobbies-grid {
@@ -1699,25 +1763,42 @@ img {
     margin-bottom: 3rem;
   }
 
+  .edu-header-line {
+    width: 80px;
+  }
+
+  .edu-header-accent {
+    display: none;
+  }
+
   .edu-main-title {
     font-size: clamp(2rem, 8vw, 3rem);
   }
 
-  .edu-grid {
+  .edu-bento {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
-  .edu-image-wrap {
-    height: 200px;
+  .edu-card {
+    min-height: auto;
   }
 
-  .edu-info {
+  .edu-card-inner {
     padding: 1.5rem;
   }
 
+  .edu-image-wrap {
+    min-height: 100px;
+  }
+
+  .edu-year-badge {
+    font-size: 0.625rem;
+    padding: 0.375rem 0.75rem;
+  }
+
   .edu-school {
-    font-size: 1rem;
+    font-size: 0.9375rem;
   }
 
   .edu-desc {
@@ -1726,11 +1807,80 @@ img {
 
   .edu-note {
     font-size: 0.6875rem;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1rem;
   }
 
-  .experience .edu-grid {
+  .edu-card-number {
+    font-size: 3rem;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .exp-timeline {
+    gap: 2rem;
+  }
+
+  .exp-card {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .exp-card-accent-bar {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    width: 100%;
+    height: 4px;
+  }
+
+  .exp-card:hover .exp-card-accent-bar {
+    width: 100%;
+    height: 6px;
+  }
+
+  .exp-card-content {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .exp-card-top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: auto;
+  }
+
+  .exp-year {
+    font-size: 0.8125rem;
+  }
+
+  .exp-location {
+    font-size: 0.6875rem;
+  }
+
+  .exp-logo-wrap {
+    width: 80px;
+    height: 80px;
+    padding: 1rem;
+    order: -1;
+  }
+
+  .exp-card-body {
+    gap: 0.5rem;
+  }
+
+  .exp-company {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+
+  .exp-role {
+    font-size: 0.875rem;
+  }
+
+  .exp-card-footer {
+    display: none;
   }
 
   .hobbies {
